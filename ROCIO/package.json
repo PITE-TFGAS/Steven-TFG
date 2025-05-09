@@ -1,0 +1,21 @@
+{
+  "name": "pitegas",
+  "version": "1.0.0",
+  "description": "wget --mirror --convert-links --page-requisites --no-parent https://ejemplo.com",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "esbuild": "^0.25.2"
+  },
+  "devDependencies": {
+    "esbuild-plugin-glob-import": "^0.2.0"
+  },
+  "scripts": {
+    "prebuild": "node core/functionalities/generarEnlacesAyuda.js",
+    "build": "esbuild core/content.js --bundle --outfile=dist/content.bundle.js --format=esm"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
