@@ -1,0 +1,88 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .maqueta {
+    position: relative;
+    width: 1280px;
+    height: 960px;
+    overflow: hidden;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 960px;
+    object-fit: contain;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 960px;
+    z-index: 1;
+  }
+
+  .campoTexto {
+    position: absolute; 
+    width: 345px; 
+    height: 26px;
+  }
+
+  .botonAcceder {
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #0F8070; 
+    color: #29A48D;
+    cursor: pointer;
+    border: none;
+  }
+
+  .botonAcceder:hover {
+    color: #004D3F;
+    background-color: #B6FF00;
+  }
+
+  .indicacion {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top: 7%;
+    left: 69%;
+    text-align: center;
+    color: #d9534f;
+    animation: parpadeo 2.5s infinite;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0px 5px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .flecha {
+    font-size: 32px;
+    margin-bottom: -5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  @keyframes parpadeo {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }

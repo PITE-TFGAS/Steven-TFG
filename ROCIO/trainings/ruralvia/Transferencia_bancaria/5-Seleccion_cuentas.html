@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Vista 5: Selección de cuenta de destino -> Importe y concepto-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Entrenamiento - Transferencia Bancaria</title>
+        <link rel="stylesheet" href="5-Seleccion_cuentas/Seleccion_cuentas.css"/>
+    </head>
+    <body>
+        <div class="maqueta">
+            <img src="5-Seleccion_cuentas/Seleccion_cuentas.png" alt="Fondo del proceso" class="background"/>
+            <div class="overlay">
+                <!-- Botón de selección de cuenta -->
+                <div id="botones">
+                    <button class="botonCuenta" style="top: 72%; left: 21.3%;">
+                        Cuenta de prueba
+                    </button>
+                    <button class="botonTexto" style="top: 73.5%; left: 21.3%;">
+                        CaixaBank ES09 8765 4321 0987 6543 2109
+                    </button>
+                    <!-- Botón de acceso a la siguiente interfaz-->
+                    <button class="botonContinuar" style="top: 83.5%; left: 71.6%;" onclick="window.location.href='6-Importe_concepto.html'">
+                        Continuar
+                    </button>
+                </div>
+                <!-- Flecha de indicación -->
+                <div class="indicacion">
+                    <div class="flecha">←</div>
+                    <div class="texto">
+                        <p>
+                            Selecciona la cuenta<br>
+                            de destino<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Script para el desplazamiento de la flecha de indicación-->
+            <script src="5-Seleccion_cuentas/desplazamiento.js"></script>
+        </div>
+    </body>
+</html>

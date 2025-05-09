@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Vista 2: Inicio de sesión(introducción de credenciales) -> Pantalla principal-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entrenamiento - Transferencia Bancaria</title>
+        <link rel="stylesheet" href="2-Inicio_sesion/Inicio_sesion.css" />
+    </head>
+    <body>
+        <div class="maqueta">
+            <img src="2-Inicio_sesion/Inicio_sesion.png" alt="Fondo del proceso" class="background"/>
+            <div class="overlay">
+                <!--Campo de texto DNI-->
+                <input type="text" id="DNI" class="campoTexto" placeholder="DNI/NIE" style="top: 40%; left: 15.7%;" />
+                <!--Campo de texto Contraseña-->
+                <input type="text" id="Contrasenya" class="campoTexto" placeholder="Contraseña" style="top: 51.5%; left: 15.7%;" />
+
+                <!-- Botón de acceso -->
+                <button id="botonAcceder" class="botonAcceder" style="top: 63%; left: 15.7%;" onclick="window.location.href='3-Pantalla_principal.html'">
+                Acceder
+                </button>
+                <!-- Flecha de indicación -->
+                <div id="indicacion" class="indicacion">
+                    <div class="flecha">⬇</div>
+                    <div class="texto">Debes escribir aquí</div>
+                </div>
+            </div>
+            <!--Script para el desplazamiento de la flecha de indicación-->
+            <script src="2-Inicio_sesion/desplazamiento.js"></script>
+        </div>
+    </body>
+</html>
