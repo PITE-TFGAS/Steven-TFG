@@ -1,5 +1,5 @@
 {
-  "name": "pitegas",
+  "name": "ROCIO",
   "version": "1.0.0",
   "description": "wget --mirror --convert-links --page-requisites --no-parent https://ejemplo.com",
   "main": "index.js",

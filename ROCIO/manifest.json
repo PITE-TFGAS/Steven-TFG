@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "PITEGAS",
+    "name": "ROCIO",
     "version": "1.0.0",
     "description": "Extensión que facilita la interacción de personas mayores con sistemas web",
     "permissions": ["activeTab", "scripting", "tabs"],
