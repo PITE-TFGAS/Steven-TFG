@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bonitaConnector="http://www.bonitasoft.org/studio/connector/definition/6.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="schemaLocation http://www.omg.org/spec/BPMN/20100524/MODEL schemas/BPMN20.xsd" exporter="BonitaSoft" exporterVersion="10.2.0" expressionLanguage="http://groovy.apache.org/" targetNamespace="http://bonitasoft.com/_YKdakNIDEe-WFKmFExTp8Q">
+  <model:collaboration id="_YKdakNIDEe-WFKmFExTp8Q">
+    <model:participant id="_RquDENvfEe-vuNcVQNBwzQ" name="Transferencia" processRef="_YKeosNIDEe-WFKmFExTp8Q"/>
+    <model:participant id="_YKhE-tIDEe-WFKmFExTp8Q" name="Employee actor">
+      <model:documentation><![CDATA[Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME]]></model:documentation>
+    </model:participant>
+    <model:participant id="_yTlv4NJhEe-Tj9PF7cMJyA" name="Usuario"/>
+  </model:collaboration>
+  <model:process id="_YKeosNIDEe-WFKmFExTp8Q" name="Transferencia">
+    <model:ioSpecification id="_Rq4bINvfEe-vuNcVQNBwzQ">
+      <model:dataInput id="_Rq5CMNvfEe-vuNcVQNBwzQ" itemSubjectRef="_-2wEkNJYEe-Tj9PF7cMJyA"/>
+      <model:dataInput id="_Rq7ecNvfEe-vuNcVQNBwzQ" itemSubjectRef="_GZgnMNJgEe-Tj9PF7cMJyA"/>
+      <model:dataInput id="_Rq7edtvfEe-vuNcVQNBwzQ" itemSubjectRef="_5MOJsNJjEe-Tj9PF7cMJyA"/>
+      <model:dataInput id="_Rq7efNvfEe-vuNcVQNBwzQ" itemSubjectRef="_7w_MgNJjEe-Tj9PF7cMJyA"/>
+      <model:dataInput id="_Rq7egtvfEe-vuNcVQNBwzQ" itemSubjectRef="_91_xMNJjEe-Tj9PF7cMJyA"/>
+      <model:dataInput id="_Rq7eiNvfEe-vuNcVQNBwzQ" itemSubjectRef="_-7OT4NJjEe-Tj9PF7cMJyA"/>
+      <model:inputSet id="_Rq5CMdvfEe-vuNcVQNBwzQ">
+        <model:dataInputRefs>_Rq5CMNvfEe-vuNcVQNBwzQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Rq7ecdvfEe-vuNcVQNBwzQ">
+        <model:dataInputRefs>_Rq7ecNvfEe-vuNcVQNBwzQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Rq7ed9vfEe-vuNcVQNBwzQ">
+        <model:dataInputRefs>_Rq7edtvfEe-vuNcVQNBwzQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Rq7efdvfEe-vuNcVQNBwzQ">
+        <model:dataInputRefs>_Rq7efNvfEe-vuNcVQNBwzQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Rq7eg9vfEe-vuNcVQNBwzQ">
+        <model:dataInputRefs>_Rq7egtvfEe-vuNcVQNBwzQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:inputSet id="_Rq7eidvfEe-vuNcVQNBwzQ">
+        <model:dataInputRefs>_Rq7eiNvfEe-vuNcVQNBwzQ</model:dataInputRefs>
+      </model:inputSet>
+      <model:outputSet id="_Rq7ejdvfEe-vuNcVQNBwzQ"/>
+    </model:ioSpecification>
+    <model:laneSet id="transferencia_laneSet">
+      <model:lane id="_YKeosdIDEe-WFKmFExTp8Q" name="Usuario">
+        <model:documentation><![CDATA[Persona que accede al sistema]]></model:documentation>
+        <model:flowNodeRef>_YKfPwNIDEe-WFKmFExTp8Q</model:flowNodeRef>
+        <model:flowNodeRef>__J2VcNIFEe-DHehne_IeMg</model:flowNodeRef>
+        <model:flowNodeRef>_a8s_ENILEe-DHehne_IeMg</model:flowNodeRef>
+        <model:flowNodeRef>_tY8pkNJbEe-Tj9PF7cMJyA</model:flowNodeRef>
+        <model:flowNodeRef>_fEs18NJdEe-Tj9PF7cMJyA</model:flowNodeRef>
+        <model:flowNodeRef>_hoiEoNJdEe-Tj9PF7cMJyA</model:flowNodeRef>
+        <model:flowNodeRef>_vrhMUNJfEe-Tj9PF7cMJyA</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="__7O80NIKEe-DHehne_IeMg" name="Sistema">
+        <model:flowNodeRef>_I9g1oNILEe-DHehne_IeMg</model:flowNodeRef>
+        <model:flowNodeRef>_QLUgINILEe-DHehne_IeMg</model:flowNodeRef>
+        <model:flowNodeRef>_7z-TQNJcEe-Tj9PF7cMJyA</model:flowNodeRef>
+      </model:lane>
+    </model:laneSet>
+    <model:dataObject id="DataObject_Rq30ENvfEe-vuNcVQNBwzQ_-2wEkNJYEe-Tj9PF7cMJyA" name="datosCorrectos" isCollection="false" itemSubjectRef="_-2wEkNJYEe-Tj9PF7cMJyA"/>
+    <model:dataObject id="DataObject_Rq63YdvfEe-vuNcVQNBwzQ_GZgnMNJgEe-Tj9PF7cMJyA" name="realizarTransferencia" isCollection="false" itemSubjectRef="_GZgnMNJgEe-Tj9PF7cMJyA"/>
+    <model:dataObject id="DataObject_Rq7eddvfEe-vuNcVQNBwzQ_5MOJsNJjEe-Tj9PF7cMJyA" name="usuario" isCollection="false" itemSubjectRef="_5MOJsNJjEe-Tj9PF7cMJyA"/>
+    <model:dataObject id="DataObject_Rq7ee9vfEe-vuNcVQNBwzQ_7w_MgNJjEe-Tj9PF7cMJyA" name="numeroCuenta" isCollection="false" itemSubjectRef="_7w_MgNJjEe-Tj9PF7cMJyA"/>
+    <model:dataObject id="DataObject_Rq7egdvfEe-vuNcVQNBwzQ_91_xMNJjEe-Tj9PF7cMJyA" name="importe" isCollection="false" itemSubjectRef="_91_xMNJjEe-Tj9PF7cMJyA"/>
+    <model:dataObject id="DataObject_Rq7eh9vfEe-vuNcVQNBwzQ_-7OT4NJjEe-Tj9PF7cMJyA" name="concepto" isCollection="false" itemSubjectRef="_-7OT4NJjEe-Tj9PF7cMJyA"/>
+    <model:startEvent id="_YKfPwNIDEe-WFKmFExTp8Q" name="Inicio"/>
+    <model:userTask id="__J2VcNIFEe-DHehne_IeMg" name="Registrarse">
+      <model:performer id="_RrTR4NvfEe-vuNcVQNBwzQ">
+        <model:resourceRef>_yTlv4NJhEe-Tj9PF7cMJyA</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:userTask id="_a8s_ENILEe-DHehne_IeMg" name="Operar">
+      <model:performer id="_RrUgAdvfEe-vuNcVQNBwzQ">
+        <model:resourceRef>_yTlv4NJhEe-Tj9PF7cMJyA</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:endEvent id="_tY8pkNJbEe-Tj9PF7cMJyA" name="Fin">
+      <model:terminateEventDefinition id="_RrWVMNvfEe-vuNcVQNBwzQ"/>
+    </model:endEvent>
+    <model:userTask id="_fEs18NJdEe-Tj9PF7cMJyA" name="Introducir datos de transferencia">
+      <model:performer id="_RrW8QdvfEe-vuNcVQNBwzQ">
+        <model:resourceRef>_yTlv4NJhEe-Tj9PF7cMJyA</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:userTask id="_hoiEoNJdEe-Tj9PF7cMJyA" name="Introducir importe y concepto">
+      <model:performer id="_RrXjUdvfEe-vuNcVQNBwzQ">
+        <model:resourceRef>_yTlv4NJhEe-Tj9PF7cMJyA</model:resourceRef>
+      </model:performer>
+    </model:userTask>
+    <model:exclusiveGateway id="_vrhMUNJfEe-Tj9PF7cMJyA" name="¿Transferencia?" default="_yz3dUNJfEe-Tj9PF7cMJyA"/>
+    <model:exclusiveGateway id="_I9g1oNILEe-DHehne_IeMg" name="¿Datos correctos?" default="_brmscNILEe-DHehne_IeMg"/>
+    <model:serviceTask id="_QLUgINILEe-DHehne_IeMg" name="Comprobar datos"/>
+    <model:serviceTask id="_7z-TQNJcEe-Tj9PF7cMJyA" name="Realizar movimiento"/>
+    <model:sequenceFlow id="_HSihkNILEe-DHehne_IeMg" name="" sourceRef="__J2VcNIFEe-DHehne_IeMg" targetRef="_QLUgINILEe-DHehne_IeMg"/>
+    <model:sequenceFlow id="_MixsINILEe-DHehne_IeMg" name="No" sourceRef="_I9g1oNILEe-DHehne_IeMg" targetRef="__J2VcNIFEe-DHehne_IeMg">
+      <model:conditionExpression xsi:type="model:tFormalExpression" id="_RrsTcNvfEe-vuNcVQNBwzQ" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[datosCorrectos = false
+]]></model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_Trbw4NILEe-DHehne_IeMg" name="" sourceRef="_QLUgINILEe-DHehne_IeMg" targetRef="_I9g1oNILEe-DHehne_IeMg"/>
+    <model:sequenceFlow id="_brmscNILEe-DHehne_IeMg" name="Sí" sourceRef="_I9g1oNILEe-DHehne_IeMg" targetRef="_a8s_ENILEe-DHehne_IeMg"/>
+    <model:sequenceFlow id="_p8PSINJbEe-Tj9PF7cMJyA" name="" sourceRef="_fEs18NJdEe-Tj9PF7cMJyA" targetRef="_hoiEoNJdEe-Tj9PF7cMJyA"/>
+    <model:sequenceFlow id="_9leGENJcEe-Tj9PF7cMJyA" name="" sourceRef="_hoiEoNJdEe-Tj9PF7cMJyA" targetRef="_7z-TQNJcEe-Tj9PF7cMJyA"/>
+    <model:sequenceFlow id="_okpswNJeEe-Tj9PF7cMJyA" name="" sourceRef="_YKfPwNIDEe-WFKmFExTp8Q" targetRef="__J2VcNIFEe-DHehne_IeMg"/>
+    <model:sequenceFlow id="_yTlawNJfEe-Tj9PF7cMJyA" name="" sourceRef="_a8s_ENILEe-DHehne_IeMg" targetRef="_vrhMUNJfEe-Tj9PF7cMJyA"/>
+    <model:sequenceFlow id="_yz3dUNJfEe-Tj9PF7cMJyA" name="Si" sourceRef="_vrhMUNJfEe-Tj9PF7cMJyA" targetRef="_fEs18NJdEe-Tj9PF7cMJyA"/>
+    <model:sequenceFlow id="_5sVJ8NJfEe-Tj9PF7cMJyA" name="No" sourceRef="_vrhMUNJfEe-Tj9PF7cMJyA" targetRef="_a8s_ENILEe-DHehne_IeMg">
+      <model:conditionExpression xsi:type="model:tFormalExpression" id="_RrzBINvfEe-vuNcVQNBwzQ" evaluatesToTypeRef="java:java.lang.Boolean"><![CDATA[realizarTransferencia = false]]></model:conditionExpression>
+    </model:sequenceFlow>
+    <model:sequenceFlow id="_peT_ANJmEe-Tj9PF7cMJyA" name="" sourceRef="_7z-TQNJcEe-Tj9PF7cMJyA" targetRef="_tY8pkNJbEe-Tj9PF7cMJyA"/>
+    <model:association id="_Rr6V4NvfEe-vuNcVQNBwzQ" sourceRef="_Rr2EcNvfEe-vuNcVQNBwzQ" targetRef="__J2VcNIFEe-DHehne_IeMg"/>
+    <model:textAnnotation id="_Rr2EcNvfEe-vuNcVQNBwzQ">
+      <model:text><![CDATA[Registrarse debiera implementarse como subproceso]]></model:text>
+    </model:textAnnotation>
+  </model:process>
+  <model:itemDefinition id="_-2wEkNJYEe-Tj9PF7cMJyA" structureRef="java:java.lang.Boolean"/>
+  <model:itemDefinition id="_GZgnMNJgEe-Tj9PF7cMJyA" structureRef="java:java.lang.Boolean"/>
+  <model:itemDefinition id="_5MOJsNJjEe-Tj9PF7cMJyA" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_7w_MgNJjEe-Tj9PF7cMJyA" structureRef="java:java.lang.String"/>
+  <model:itemDefinition id="_91_xMNJjEe-Tj9PF7cMJyA" structureRef="java:java.lang.Double"/>
+  <model:itemDefinition id="_-7OT4NJjEe-Tj9PF7cMJyA" structureRef="java:java.lang.String"/>
+  <di:BPMNDiagram name="Diagrama transferencia">
+    <di:BPMNPlane id="plane__YKdakNIDEe-WFKmFExTp8Q" bpmnElement="_YKdakNIDEe-WFKmFExTp8Q">
+      <di:BPMNShape id="_YKhsAdIDEe-WFKmFExTp8Q" bpmnElement="_RquDENvfEe-vuNcVQNBwzQ" isHorizontal="true">
+        <dc:Bounds height="440.0" width="1023.0" x="0.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_YKhsBNIDEe-WFKmFExTp8Q" bpmnElement="_YKeosdIDEe-WFKmFExTp8Q" isHorizontal="true">
+        <dc:Bounds height="279.0" width="993.0" x="30.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_YKiTEtIDEe-WFKmFExTp8Q" bpmnElement="_YKfPwNIDEe-WFKmFExTp8Q">
+        <dc:Bounds height="30.0" width="30.0" x="90.0" y="92.0"/>
+        <di:BPMNLabel id="_RrL9IdvfEe-vuNcVQNBwzQ" labelStyle="_RrL9INvfEe-vuNcVQNBwzQ">
+          <dc:Bounds height="17.0" width="44.0" x="83.0" y="127.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="__KE-8NIFEe-DHehne_IeMg" bpmnElement="__J2VcNIFEe-DHehne_IeMg">
+        <dc:Bounds height="50.0" width="100.0" x="348.0" y="82.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_a8wpcNILEe-DHehne_IeMg" bpmnElement="_a8s_ENILEe-DHehne_IeMg">
+        <dc:Bounds height="50.0" width="100.0" x="527.0" y="82.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_tZVrINJbEe-Tj9PF7cMJyA" bpmnElement="_tY8pkNJbEe-Tj9PF7cMJyA">
+        <dc:Bounds height="30.0" width="30.0" x="920.0" y="92.0"/>
+        <di:BPMNLabel id="_RrW8QNvfEe-vuNcVQNBwzQ" labelStyle="_RrL9INvfEe-vuNcVQNBwzQ">
+          <dc:Bounds height="17.0" width="22.0" x="924.0" y="127.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_fE2m8NJdEe-Tj9PF7cMJyA" bpmnElement="_fEs18NJdEe-Tj9PF7cMJyA">
+        <dc:Bounds height="60.0" width="120.0" x="748.0" y="80.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_hokg4NJdEe-Tj9PF7cMJyA" bpmnElement="_hoiEoNJdEe-Tj9PF7cMJyA">
+        <dc:Bounds height="60.0" width="120.0" x="751.0" y="194.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_vrnS8NJfEe-Tj9PF7cMJyA" bpmnElement="_vrhMUNJfEe-Tj9PF7cMJyA">
+        <dc:Bounds height="43.0" width="43.0" x="667.0" y="88.0"/>
+        <di:BPMNLabel id="_RrZYgNvfEe-vuNcVQNBwzQ" labelStyle="_RrL9INvfEe-vuNcVQNBwzQ">
+          <dc:Bounds height="17.0" width="111.0" x="633.0" y="136.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="__7gpoNIKEe-DHehne_IeMg" bpmnElement="__7O80NIKEe-DHehne_IeMg" isHorizontal="true">
+        <dc:Bounds height="161.0" width="993.0" x="30.0" y="279.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_I9j48NILEe-DHehne_IeMg" bpmnElement="_I9g1oNILEe-DHehne_IeMg">
+        <dc:Bounds height="43.0" width="43.0" x="513.0" y="351.0"/>
+        <di:BPMNLabel id="_RrbNsNvfEe-vuNcVQNBwzQ" labelStyle="_RrL9INvfEe-vuNcVQNBwzQ">
+          <dc:Bounds height="17.0" width="126.0" x="471.0" y="399.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_QLuv0NILEe-DHehne_IeMg" bpmnElement="_QLUgINILEe-DHehne_IeMg">
+        <dc:Bounds height="50.0" width="100.0" x="348.0" y="348.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_70aYINJcEe-Tj9PF7cMJyA" bpmnElement="_7z-TQNJcEe-Tj9PF7cMJyA">
+        <dc:Bounds height="38.0" width="76.0" x="761.0" y="335.0"/>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_HSkWwNILEe-DHehne_IeMg" bpmnElement="_HSihkNILEe-DHehne_IeMg">
+        <di_1:waypoint x="396.0" y="132.0"/>
+        <di_1:waypoint x="396.0" y="348.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_Mi19kNILEe-DHehne_IeMg" bpmnElement="_MixsINILEe-DHehne_IeMg">
+        <di_1:waypoint x="534.0" y="351.0"/>
+        <di_1:waypoint x="534.0" y="241.0"/>
+        <di_1:waypoint x="429.0" y="241.0"/>
+        <di_1:waypoint x="429.0" y="132.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="14.0" x="475.0" y="243.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_TrgCUNILEe-DHehne_IeMg" bpmnElement="_Trbw4NILEe-DHehne_IeMg">
+        <di_1:waypoint x="448.0" y="373.0"/>
+        <di_1:waypoint x="513.0" y="373.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_bsDYYNILEe-DHehne_IeMg" bpmnElement="_brmscNILEe-DHehne_IeMg">
+        <di_1:waypoint x="553.0" y="375.0"/>
+        <di_1:waypoint x="576.0" y="375.0"/>
+        <di_1:waypoint x="576.0" y="132.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="14.0" x="559.0" y="257.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_p8aRQNJbEe-Tj9PF7cMJyA" bpmnElement="_p8PSINJbEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="810.0" y="140.0"/>
+        <di_1:waypoint x="810.0" y="194.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_9l0rYNJcEe-Tj9PF7cMJyA" bpmnElement="_9leGENJcEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="850.0" y="254.0"/>
+        <di_1:waypoint x="850.0" y="294.0"/>
+        <di_1:waypoint x="783.0" y="294.0"/>
+        <di_1:waypoint x="783.0" y="335.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_okt-MNJeEe-Tj9PF7cMJyA" bpmnElement="_okpswNJeEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="120.0" y="107.0"/>
+        <di_1:waypoint x="348.0" y="107.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_yTrhYNJfEe-Tj9PF7cMJyA" bpmnElement="_yTlawNJfEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="627.0" y="109.0"/>
+        <di_1:waypoint x="667.0" y="109.0"/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_yz5SgNJfEe-Tj9PF7cMJyA" bpmnElement="_yz3dUNJfEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="710.0" y="109.0"/>
+        <di_1:waypoint x="748.0" y="109.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="14.0" x="722.0" y="91.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_5snd0NJfEe-Tj9PF7cMJyA" bpmnElement="_5sVJ8NJfEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="688.0" y="88.0"/>
+        <di_1:waypoint x="688.0" y="54.0"/>
+        <di_1:waypoint x="577.0" y="54.0"/>
+        <di_1:waypoint x="577.0" y="82.0"/>
+        <di:BPMNLabel>
+          <dc:Bounds height="17.0" width="14.0" x="629.0" y="56.0"/>
+        </di:BPMNLabel>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_peYQcNJmEe-Tj9PF7cMJyA" bpmnElement="_peT_ANJmEe-Tj9PF7cMJyA">
+        <di_1:waypoint x="837.0" y="355.0"/>
+        <di_1:waypoint x="921.0" y="355.0"/>
+        <di_1:waypoint x="921.0" y="114.0"/>
+      </di:BPMNEdge>
+      <di:BPMNShape id="_TC-Q0NJaEe-Tj9PF7cMJyA" bpmnElement="_Rr2EcNvfEe-vuNcVQNBwzQ">
+        <dc:Bounds height="50.0" width="100.0" x="348.0" y="11.0"/>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_TDSZ4NJaEe-Tj9PF7cMJyA" bpmnElement="_Rr6V4NvfEe-vuNcVQNBwzQ">
+        <di_1:waypoint x="398.0" y="61.0"/>
+        <di_1:waypoint x="398.0" y="82.0"/>
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+    <di:BPMNLabelStyle id="_RrL9INvfEe-vuNcVQNBwzQ">
+      <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name=".AppleSystemUIFont" size="9.0"/>
+    </di:BPMNLabelStyle>
+  </di:BPMNDiagram>
+</model:definitions>
