@@ -34,8 +34,6 @@ El sistema simula plataformas reales mediante interfaces simplificadas y modular
 
 ---
 
----
-
 ## ✨ Funcionalidades principales
 
 - **Resaltado automático** de inputs y botones interactivos.
@@ -64,6 +62,6 @@ El sistema simula plataformas reales mediante interfaces simplificadas y modular
    ```
 5.	La extensión estará activa y lista para usarse con los módulos de entrenamiento.
 
---
+---
 
 Este proyecto se desarrolla con fines académicos como Trabajo de Fin de Grado (TFG).
