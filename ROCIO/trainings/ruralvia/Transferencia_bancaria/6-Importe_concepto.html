@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Vista 6: Pantalla de importe y concepto -> Tipo de envío-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entrenamiento - Transferencia Bancaria</title>
+        <link rel="stylesheet" href="6-Importe_concepto/Importe_concepto.css" />
+    </head>
+    <body>
+        <div class="maqueta">
+            <img src="6-Importe_concepto/Importe_concepto.png" alt="Fondo del proceso" class="background"/>
+            <div class="overlay">
+                <!-- Campo de texto Importe -->
+                <input type="text" id="Importe" class="campoTexto" placeholder="Importe" style="top: 54.5%; left: 19.5%;"/>
+                <!-- Campo de texto Concepto-->
+                <input type="text" id="Concepto" class="campoTexto" placeholder="Concepto" style="top: 63%; left: 19.5%; width: 395px;"/>
+                <!-- Botón de cambio de vista-->
+                <button class="botonContinuar" style="top: 77.6%; left: 71.4%;" onclick="window.location.href='7-Tipo_envio.html'">
+                    Continuar
+                </button>
+                <!-- Flecha de indicación Importe -->
+                <div class="indicacion" style="top: 54%; left: 7%;">
+                    <div class="flecha">→</div>
+                    <div class="texto">
+                        <p>
+                            Introduce cuanto<br>
+                            dinero quieres<br>
+                            enviar<br>
+                        </p>
+                    </div>
+                </div>
+                <!-- Flecha de indicación Concepto-->
+                <div class="indicacion" style="top: 62%; left: 52%;">
+                    <div class="flecha">←</div>
+                    <div class="texto">
+                        <p>
+                            Puedes añadir<br>
+                            un concepto,<br>
+                            si quieres<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Script para el desplazamiento de la flecha de indicación-->
+            <script src="6-Importe_concepto/desplazamiento.js"></script>
+        </div>
+    </body>
+</html>
