@@ -1,8 +1,11 @@
 # ROCIO: Refuerzo y Orientación Compurarizada para la Integración Online
 
 **Trabajo de Fin de Grado - Grado en Ingeniería Informática**  
+
 **Autor:** Steven Rodríguez Morales ([alu0101477381@ull.edu.es](alu0101477381@ull.edu.es))  
-**Tutores:** Icán Castilla Rodríguez ([icasrod@ull.edu.es](icasrod@ull.edu.es)) y Rafael Herrero Álvarez ([rherrero@ull.edu.es](rherrero@ull.edu.es)) 
+
+**Tutores:** Icán Castilla Rodríguez ([icasrod@ull.edu.es](icasrod@ull.edu.es)) y Rafael Herrero Álvarez ([rherrero@ull.edu.es](rherrero@ull.edu.es))
+
 **Curso académico:** 2024-2025
 
 ---
