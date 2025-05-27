@@ -1,52 +1,69 @@
-# ROCIO: **R**efuerzo y **O**rientación **C**omputarizada para la **I**ntegración **O**nline 
+# ROCIO: Refuerzo y Orientación Compurarizada para la Integración Online
 
-Este repositorio contiene una extensión de navegador desarrollada en **TypeScript** que actúa como asistente inteligente para la navegación web, especialmente diseñada para facilitar el uso de páginas complejas a personas mayores. Funciona mediante la integración con **modelos Gemini de Google**, a los que se accede mediante una API Key personalizada.
-
-La extensión analiza el contenido de las páginas web y genera respuestas guiadas paso a paso, adaptadas a las necesidades del usuario, aprovechando las capacidades de generación de lenguaje natural de Gemini.
-
-## Instalación
-
-1. **Descarga el repositorio**  
-   Puedes clonar este repositorio o descargarlo como archivo ZIP y descomprimirlo en tu equipo.
-
-2. **Instala las dependencias**  
-   Abre una terminal en la carpeta del proyecto y ejecuta:
-   ```bash
-   npm install
-   ```
-
-3. **Compila la extensión**  
-   Para construir la extensión, ejecuta:
-   ```bash
-   npm run build
-   ```
-
-4. **Carga la extensión en tu navegador Chromium**  
-   - Abre tu navegador (Chrome, Edge, Brave, etc.).
-   - Ve a `chrome://extensions/`.
-   - Activa el modo para desarrolladores.
-   - Arrastra la carpeta `dist` generada tras la compilación al área de extensiones para cargar la extensión.
-
-## Primer uso
-
-Al abrir la extensión por primera vez, se te pedirá que elijas uno de los modelos de Gemini disponibles e introduzcas tu propia API Key para comenzar a utilizarla.
-
-## Tecnologías utilizadas
-
-- **TypeScript** (principal lenguaje de desarrollo)
-- **HTML** y **JavaScript** (para la interfaz de usuario y funcionalidades adicionales)
-- Herramientas de construcción y gestión de dependencias con **npm**
-
-## Contribución
-
-Si deseas contribuir, abre un _issue_ o realiza un _pull request_ con tus sugerencias y mejoras.
-
-## Licencia
-
-Este proyecto se publica bajo la licencia [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
-
-Puedes usar, modificar y distribuir este código libremente, siempre que cualquier distribución o trabajo derivado conserve la misma licencia.
+**Trabajo de Fin de Grado - Grado en Ingeniería Informática**  
+**Autor:** Steven Rodríguez Morales ([alu0101477381@ull.edu.es](alu0101477381@ull.edu.es))  
+**Tutores:** Icán Castilla Rodríguez ([icasrod@ull.edu.es](icasrod@ull.edu.es)) y Rafael Herrero Álvarez ([rherrero@ull.edu.es](rherrero@ull.edu.es)) 
+**Curso académico:** 2024-2025
 
 ---
 
-Desarrollado por [AdayCuestaCorrea](https://github.com/AdayCuestaCorrea)
+## 📘 Descripción
+
+**ROCIO** es un sistema diseñado para facilitar la inclusión digital de personas mayores a través de una extensión de navegadores **Chromium** que proporciona un entorno seguro y asistido para el aprendizaje autónomo de procesos digitales comunes, como la realización de transferencias bancarias, consulta de datos online, gestiones de citas previas, entre otros.
+
+El sistema simula plataformas reales mediante interfaces simplificadas y modulares, con funcionalidades de asistencia y seguridad para fomentar la confianza y la independencia del usuario.
+
+---
+
+## 🎯 Objetivos
+
+- Facilitar la alfabetización digital de personas mayores.
+- Simular entornos digitales reales en un entorno controlado.
+- Proporcionar asistencia visual e interactiva en tiempo real.
+- Garantizar la seguridad mediante validación de páginas.
+
+---
+
+## 🧠 Tecnologías utilizadas
+
+- **HTML, CSS, JavaScript** – Desarrollo de la extensión y módulos de entrenamiento.
+- **esbuild** – _Bundling_ y modularización del sistema.
+- **API Google Safe Browsing** – Verificación de seguridad de páginas web.
+- **Figma** – Diseño de interfaces y prototipos.
+- **BonitaSoft / ProcessMaker** – Modelado del flujo de interacción (en etapas de investigación).
+
+---
+
+---
+
+## ✨ Funcionalidades principales
+
+- **Resaltado automático** de inputs y botones interactivos.
+- **Mensajes de ayuda contextuales** en la interfaz.
+- **Comprobación de seguridad** antes de interactuar con una página.
+- **Módulos de entrenamiento** que simulan procesos reales con feedback inmediato.
+
+---
+
+## 🚀 Instalación y uso
+
+1. Clone este repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/rocío-tfg.git
+   ```
+   O descárguelo como un .zip y descomprímalo en su equipo.
+
+2.	Abra **Google Chrome** y acceda a
+   ```bash
+   chrome://extensions.
+   ```
+3.	Active el modo de desarrollador.
+4.	Haga clic en “_Cargar descomprimida_” y seleccione la carpeta
+   ```bash
+   ROCIO/.
+   ```
+5.	La extensión estará activa y lista para usarse con los módulos de entrenamiento.
+
+--
+
+Este proyecto se desarrolla con fines académicos como Trabajo de Fin de Grado (TFG).
